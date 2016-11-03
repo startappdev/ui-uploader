@@ -123,7 +123,7 @@ function uiUploader($log) {
         };
 
         // Triggered when upload is completed:
-        xhr.upload.onload = function() {
+        xhr.onload = function() {
             self.activeUploads -= 1;
             self.uploadedFiles += 1;
             startUpload(self.options);
